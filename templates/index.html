@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot & Dataset Viewer</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Chatbot</h1>
+
+      <!-- Chatbot Section -->
+      <div class="chatbox">
+        <div id="chat-history"></div>
+        <div class="input-area">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ask me anything..."
+            onkeypress="handleKeyPress(event)"
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+      <h2>Sample Dataset (5 Random Questions & Answers)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody id="dataset-table">
+          <tr>
+            <td colspan="2">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
