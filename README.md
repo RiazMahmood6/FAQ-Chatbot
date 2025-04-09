@@ -1,8 +1,7 @@
-﻿# Chatbot with Sentence Similarity Matching
+# Chatbot with Sentence Similarity Matching
 
 This is a chatbot that uses sentence similarity to find the most relevant response to user queries. It is built using Flask and utilizes the `sentence-transformers/all-MiniLM-L6-v2` model to compute similarity between user questions and predefined answers.
 
-![Chatbot Preview](https://drive.google.com/file/d/1g0Iq_cjsC9T-lgUt3ck6ELkHO4L-VvTA/view?usp=sharing)
 
 ## Features
 - Uses `sentence-transformers/all-MiniLM-L6-v2` for sentence similarity.
@@ -62,6 +61,14 @@ The chatbot provides an endpoint to ask questions:
 3. It finds the most similar question and retrieves the corresponding answer.
 4. If no relevant match is found, it responds with a default message.
 
+## Use Cases
+This chatbot can be used in various industries, including:
+- **Retail & E-commerce**: Answer customer queries regarding products, pricing, and policies.
+- **University Libraries**: Assist students with book availability, library rules, and opening hours.
+- **Hotels & Hospitality**: Provide guests with information about services, booking details, and amenities.
+- **Shops & Supermarkets**: Help customers with product inquiries and promotions.
+- **Customer Service**: Automate responses to frequently asked questions in different businesses.
+
 ## Technologies Used
 - Python
 - Flask
@@ -73,7 +80,8 @@ The chatbot provides an endpoint to ask questions:
 Pull requests are welcome! If you find a bug or have a feature request, please open an issue.
 
 ## Contact
-For any inquiries, reach out via GitHub issues or email: `rzmahmood6@gmail.com`.
+For any inquiries, reach out via GitHub issues or email: `rzmahmood6@gmail.com
+`.
 
 ---
 Happy coding! 🚀
